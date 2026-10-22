@@ -1,5 +1,7 @@
 """Xabarnoma matnini yasash. Telethon'ga bog'liq emas — test qilish oson."""
 
+from __future__ import annotations
+
 from datetime import datetime
 from html import escape
 from zoneinfo import ZoneInfo

@@ -40,6 +40,17 @@ Shaxsiy chatlar kuzatilmaydi — faqat guruh, supergroup va kanal komentariyalar
    `OWNER_ID` bo'sh qolsa, xabarnomalar userbot akkauntining o'ziga keladi.
    `IGNORE_CHATS` — xabarnoma kerak bo'lmagan chatlar ID lari (vergul bilan).
 
+## Mac'da eng oson yo'l
+
+1. Terminalda `python3 --version` yozing. Python yo'q bo'lsa, macOS Command Line Tools'ni
+   o'rnatishni taklif qiladi — **Install / Continue** bosing va tugashini kuting.
+2. Loyiha papkasida:
+   ```bash
+   bash start.command
+   ```
+   Birinchi marta API_ID, API_HASH, BOT_TOKEN, keyin telefon raqam va kodni so'raydi.
+   Keyingi safar shu buyruq botni darhol ishga tushiradi.
+
 ## Ishga tushirish (Docker, VPS)
 
 ```bash
