@@ -51,6 +51,25 @@ Shaxsiy chatlar kuzatilmaydi — faqat guruh, supergroup va kanal komentariyalar
    Birinchi marta API_ID, API_HASH, BOT_TOKEN, keyin telefon raqam va kodni so'raydi.
    Keyingi safar shu buyruq botni darhol ishga tushiradi.
 
+## Bepul serverda 24/7 (Oracle Cloud Free)
+
+1. https://www.oracle.com/cloud/free/ da ro'yxatdan o'ting (karta faqat tekshirish uchun).
+2. **Create a VM instance**: Image — **Ubuntu**, Shape — **VM.Standard.E2.1.Micro**
+   (*Always Free-eligible*). *Add SSH keys* bo'limida **Save private key** ni bosing.
+3. Mac Terminal'da serverga ulaning (`<IP>` — instansiya sahifasidagi *Public IP address*):
+   ```bash
+   chmod 600 ~/Downloads/ssh-key-*.key
+   ssh -i ~/Downloads/ssh-key-*.key ubuntu@<IP>
+   ```
+4. Serverda bitta buyruq:
+   ```bash
+   bash <(curl -fsSL https://raw.githubusercontent.com/abdulazizcoder0901/tg_reply_me/claude/affectionate-cerf-k66w38/deploy/install.sh)
+   ```
+   API_ID, API_HASH, BOT_TOKEN, telefon raqam va kodni so'raydi, keyin bot `systemd` xizmati
+   sifatida doimiy ishlaydi (server qayta yonsa ham o'zi ishga tushadi).
+
+Loglar: `sudo journalctl -u tg_reply_me -f`. Kodni yangilash — 4-qadamdagi buyruqni qayta ishga tushiring.
+
 ## Ishga tushirish (Docker, VPS)
 
 ```bash
