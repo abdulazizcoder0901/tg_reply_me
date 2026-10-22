@@ -1,0 +1,8 @@
+services:
+  tg_reply_me:
+    build: .
+    container_name: tg_reply_me
+    env_file: .env
+    volumes:
+      - ./sessions:/app/sessions
+    restart: unless-stopped
